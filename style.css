@@ -1,0 +1,197 @@
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    line-height: 1.8;
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: white;
+}
+main{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+h2{
+    margin-top: 20px;
+}
+.pref-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.pref-list li {
+    margin: 0;
+}
+.pref-list a {
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    background:#fff;
+}
+.pref-list a:hover {
+    background-color: #f5f5f5;
+}
+.municipality-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.municipality-list li {
+    margin: 0;
+}
+.municipality-list a {
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    background:#fff;
+}
+.municipality-list a:hover {
+    background-color: #f5f5f5;
+}
+.column{
+    margin:20px 0;
+    border:1px solid #cccccc;
+    border-radius:8px;
+    overflow:hidden;
+}
+.column summary{
+    cursor:pointer;
+    padding:15px 20px;
+    font-size:18px;
+    font-weight:bold;
+    background:#ffffff;
+    transition:0.2s;
+    user-select:none;
+}
+.column summary:hover{
+    background:#e9e9e9;
+}
+.column[open] summary{
+    background:#f5f5f5;
+}
+.column-content{
+    padding:20px;
+    background:white;
+}
+.column-content table{
+    border-collapse:collapse;
+    width:100%;
+}
+.column-content th,
+.column-content td{
+    border:1px solid #cccccc;
+    padding:8px 12px;
+}
+.column-content th{
+    width:120px;
+    background:#f5f5f5;
+}
+.travel-log{
+background:white;
+padding:10px;
+margin:20px 0;
+border-left:6px solid #036b9d;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+.travel-log h3{
+margin-top:0;
+}
+.travel-log img{
+width:100%;
+max-width:800px;
+display:block;
+margin:20px auto;
+border-radius:10px;
+}
+.stations-log{
+background:white;
+padding:10px;
+margin:20px 0;
+border-left:6px solid #da4500;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+.stations-log h3{
+margin-top:0;
+}
+.railway-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+    list-style:none;
+    padding:0;
+}
+.railway-grid li{
+    margin:0;
+}
+.railway-grid a{
+    display:block;
+    text-align:center;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    text-decoration:none;
+    background:#fff;
+}
+.railway-grid a:hover{
+    background:#f5f5f5;
+}
+.station{
+display:flex;
+align-items:center;
+gap:20px;
+padding:15px;
+margin:15px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+.station img{
+width:220px;
+height:140px;
+object-fit:cover;
+border-radius:6px;
+}
+.route-info{
+border-collapse:collapse;
+margin-bottom:30px;
+}
+.route-info th,
+.route-info td{
+border:1px solid #ccc;
+padding:8px 12px;
+}
+@media (max-width:900px){
+    .railway-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+@media (max-width:600px){
+    .railway-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
